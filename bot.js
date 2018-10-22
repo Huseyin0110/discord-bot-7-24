@@ -118,7 +118,7 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
 // Müzik Komutu // // API KODU DC DE //
 
 const { GOOGLE_API_KEY } = require('./anahtarlar.json');
